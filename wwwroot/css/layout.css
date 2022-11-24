@@ -1,0 +1,114 @@
+header {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background-color: #000000;
+  position: fixed;
+  z-index: 2;
+}
+
+header img {
+  cursor: pointer;
+  height: 7vh;
+}
+
+#logo3 a {
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #bf1b2c;
+  text-decoration: none;
+}
+
+.nav__links a {
+  list-style: none;
+  text-decoration: none;
+  color: #2dbe78;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.nav__links li a:hover, a:hover {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.btn {
+  background-color: #2dbe78;
+  border-radius: 58px;
+  font-weight: 500;
+  padding: 0 8px;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+}
+
+.btn-login {
+  background-color: #2dbe78;
+  border-radius: 58px;
+  font-weight: 500;
+  padding: 0 8px;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 5%;
+  margin-top: 5em;
+}
+
+.contact p {
+  color: #2dbe78;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.contact span {
+  color: white;
+}
+
+.contact h5 {
+  width: 70%;
+}
+
+
+
+table {
+  color: white;
+  width: 50%;
+  text-align: left;
+}
+
+td {
+  height: 70px;
+}
+
+th {
+  height: 50px;
+}
+
+h5 {
+  color: #7f7f7f;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 2% 0;
+}
+
+body{
+  margin:0;
+}

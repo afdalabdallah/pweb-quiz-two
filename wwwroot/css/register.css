@@ -1,0 +1,15 @@
+#registerForm, #account{
+    width: 80%;
+    border-radius: 16px;
+    padding: 2em 3em;
+    margin: auto;
+    box-shadow: 8px 8px 29px;
+}
+
+.col-md-offset-2{
+    display: none;
+}
+
+#registerSubmit{
+    margin-top: 0.5em;
+}

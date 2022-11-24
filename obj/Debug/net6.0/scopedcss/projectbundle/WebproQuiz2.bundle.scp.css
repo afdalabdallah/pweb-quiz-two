@@ -1,0 +1,94 @@
+/* _content/WebproQuiz2/Views/Shared/_Layout.cshtml.rz.scp.css */
+header[b-vz927e2hk4] {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background-color: #000000;
+  position: fixed;
+}
+
+header img[b-vz927e2hk4] {
+  cursor: pointer;
+  height: 7vh;
+}
+
+#logo3 a[b-vz927e2hk4] {
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #bf1b2c;
+  text-decoration: none;
+}
+
+.nav__links a[b-vz927e2hk4] {
+  list-style: none;
+  text-decoration: none;
+  color: #2dbe78;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.nav__links li[b-vz927e2hk4] {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.nav__links li a:hover[b-vz927e2hk4] {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.nav__links li:nth-child(3)[b-vz927e2hk4] {
+  background-color: #2dbe78;
+  border-radius: 58px;
+}
+
+.nav__links li:nth-child(3) a[b-vz927e2hk4] {
+  color: black;
+}
+
+footer[b-vz927e2hk4] {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 5%;
+}
+
+.contact p[b-vz927e2hk4] {
+  color: #2dbe78;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.contact span[b-vz927e2hk4] {
+  color: white;
+}
+
+.contact h5[b-vz927e2hk4] {
+  width: 70%;
+}
+
+table[b-vz927e2hk4] {
+  color: white;
+  width: 50%;
+  text-align: left;
+}
+
+td[b-vz927e2hk4] {
+  height: 70px;
+}
+
+th[b-vz927e2hk4] {
+  height: 50px;
+}
+
+h5[b-vz927e2hk4] {
+  color: #7f7f7f;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 2% 0;
+}

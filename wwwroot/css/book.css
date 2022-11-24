@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+#booksPage .btn{
+    font-size: 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+#booksPage {
+    padding: 0 10em;
+}
+
+#booksPage *{
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: black;
+}
+
+.btn-primary{
+    background-color: #50ca3d;
+}
+
+.btn-secondary{
+    background-color:rgb(67, 115, 237);
+}
+
+.btn-warning{
+    background-color: #8eef33;
+}
+
+.btn-danger {
+    background-color: rgb(230, 51, 51);
+}
+
+.book-table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.book-table,.book-table td,.book-table th{
+    border: 1px solid #2dbe78;
+    border-radius: 8px;
+}
+
+.book-table th{
+    font-weight: bolder;
+    font-size: 26px;
+}
+

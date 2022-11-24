@@ -1,0 +1,99 @@
+﻿@model WebproQuiz2.Data.Book
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/delete.css">
+</head>
+@* <h1 class="fw-bold mt-5">Delete Book</h1>
+
+    <div class="alert alert-danger" role="alert">
+    Are you sure you want to delete this?
+    </div>
+    <div>
+    <hr />
+    <dl class="row">
+    <dt class = "col-sm-2">
+    ISBN
+    </dt>
+    <dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.BookIsbn)
+    </dd>
+    <dt class = "col-sm-2">
+    Title
+    </dt>
+    <dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.BookTitle)
+    </dd>
+    <dt class = "col-sm-2">
+    Price
+    </dt>
+    <dd class = "col-sm-10">
+    @Html.DisplayFor(model => model.BookPrice)
+    </dd>
+    </dl>
+
+    <form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+    </form>
+    </div> *@
+
+<div class="create-wrapper">
+    <div class="create-box">
+        <div style="font-size: 36px; color:red;" role="alert">
+            Are you sure you want to delete this?
+        </div>
+        <div style="width:90%; margin:auto">
+            <table class="detail-table" style="color: black;width:100%">
+                <tbody>
+
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.BookTitle)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Area
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.BookIsbn) m2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Price
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            Rp @Html.DisplayFor(model => model.BookPrice)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 80px;">
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    <a asp-action="Index" class="btn btn-secondary">Back</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

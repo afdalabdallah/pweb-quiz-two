@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Rent.in</title>
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true"> *@
+</head>
+
+<body>
+    <header style="">
+        <img src="~/img/Logo.png" alt="">
+        <nav>
+            <ul class="nav__links">
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Books" asp-action="Index">Building</a></li>
+                <partial name="_LoginPartial" />
+
+            </ul>
+        </nav>
+    </header>
+
+    <div style="padding-top: 8em;">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="contact">
+            <p>Rent<span>Me</span></p>
+            <h5>Comfortable rooms, safe facilities, we are the solution
+            </h5>
+            <div class="socialMedia">
+                <img src="/img/Facebook.png" alt="">
+                <img src="/img/Instagram.png" alt="">
+                <img src="/img/Twitter.png" alt="">
+                <img src="/img/Linkedin.png" alt="">
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h5>Company</h5>
+                    </th>
+                    <th>
+                        <h5>Company Links</h5>
+                    </th>
+                    <th>
+                        <h5>Legal</h5>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h5>About</h5>
+                    </td>
+                    <td>
+                        <h5>Share Location</h5>
+                    </td>
+                    <td>
+                        <h5>Terms & Condition</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Contact Us</h5>
+                    </td>
+                    <td>
+                        <h5>FAQs</h5>
+                    </td>
+                    <td>
+                        <h5>Privacy Policy</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Support</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Careers</h5>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

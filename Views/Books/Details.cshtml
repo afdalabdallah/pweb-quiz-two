@@ -1,0 +1,59 @@
+﻿@model WebproQuiz2.Data.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/details.css" asp-append-version="true" />
+</head>
+
+<div class="create-wrapper">
+    <div class="create-box">
+        <h2 style="text-align: center;">Building Details</h2>
+        <div style="width:90%; margin:auto">
+            <table class="detail-table" style="color: black;width:100%">
+                <tbody>
+
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.BookTitle)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Area
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.BookIsbn) m2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Price
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            Rp @Html.DisplayFor(model => model.BookPrice)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 80px;">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
